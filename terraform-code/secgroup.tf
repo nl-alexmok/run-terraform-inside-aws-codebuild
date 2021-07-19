@@ -31,7 +31,7 @@ resource "aws_route_table" "public_rt" {
 resource "aws_subnet" "public_a" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.0.0/24"
-  availability_zone = "us-west-2a"
+  availability_zone = "us-east-1"
 
   tags = {
     Name = "terraform-demo-public-a"
