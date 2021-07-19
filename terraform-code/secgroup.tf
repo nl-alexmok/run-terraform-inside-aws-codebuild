@@ -1,9 +1,9 @@
 resource "aws_security_group" "Demo" {
-  name = "Demo-SG"
+  name = "Demo-SG-v1"
   tags {
-        Name = "Demo-SG"
+        Name = "Demo-SG-v1"
   }
-  description = "Demo SG"
+  description = "Demo SG v1"
   egress {
     from_port   = 0
     to_port     = 65535 # All outbound traffic
